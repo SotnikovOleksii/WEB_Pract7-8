@@ -1,0 +1,117 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.gallery-container {
+    width: 100%;
+    min-width: none;
+}
+
+.filters {
+    width: 100%;
+    text-align: center;
+    background-color: #f4f4f4;
+    padding: 10px 0;
+}
+
+.filter-item {
+    display: inline-block;
+    box-sizing: border-box;
+    width: 30%;
+    margin: 5px;
+    padding: 10px 15px;
+    width: 30%;
+    border-radius: 5px;
+    background-color: #ddd;
+    border: 1px solid #ccc;
+    cursor: pointer;
+}
+
+.filter-item:hover,
+.filter-item.active {
+    background-color: #aaa;
+    color: white;
+}
+
+.calorie-filter {
+    margin-top: 10px;
+}
+
+.gallery {
+    width: 100%;
+    text-align: center;
+}
+
+.card {
+    display: inline-block;
+    box-sizing: border-box;
+    width: 30%;
+    margin: 10px;
+    border-radius: 5px;
+    background-color: #eaeaea;
+    border: 1px solid #8f8f8f;
+    vertical-align: top;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+}
+
+.card .info {
+    padding: 10px;
+    height: 100px;
+}
+
+.footer {
+    background-color: #808080;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+@media (min-width: 375px) and (max-width: 730px) {
+    .filters {
+        padding: 10px;
+    }
+
+    .filter-item {
+        box-sizing: border-box;
+        width: 45%;
+    }
+
+    .filters input, .filters label{
+        display: none;
+    }
+
+    .gallery .card {
+        width: 450px;
+        height: 350px;
+        box-sizing: border-box;
+    }
+
+    .card p,
+    .card h3 {
+        display: none;
+    }
+}
+
+@media (min-width: 730px) and (max-width: 1200px) {
+    .gallery .card {
+        width: 300px;
+        height: 300px;
+    }
+
+    .card p {
+        display: none;
+    }
+}
+
+@media (min-width: 1200px) {
+    .gallery .card {
+        width: 300px;
+        height: 350px;
+    }
+}
